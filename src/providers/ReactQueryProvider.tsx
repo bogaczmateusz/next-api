@@ -3,6 +3,7 @@ import React from "react"
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query"
 import { ReactQueryDevtools } from "@tanstack/react-query-devtools"
 import { queryClientOptions } from "@/utils/constants"
+import { ReduxProvider } from "./ReduxProvider"
 
 export const ReactQueryProvider = ({
   children
@@ -15,7 +16,7 @@ export const ReactQueryProvider = ({
 
   return (
     <QueryClientProvider client={queryClient}>
-      {children}
+      <ReduxProvider>{children}</ReduxProvider>
       <ReactQueryDevtools initialIsOpen={false} />
     </QueryClientProvider>
   )
