@@ -6,7 +6,7 @@ export interface CommonState {
 }
 
 const initialState: CommonState = {
-  test: ""
+  test: "Test value."
 }
 
 export const commonSlice = createSlice({

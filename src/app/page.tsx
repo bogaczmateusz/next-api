@@ -4,6 +4,7 @@ import { ReactQueryHydrate } from "@/components/ReactQueryHydrate/ReactQueryHydr
 import { queryPlanets } from "@/hooks/usePlanets"
 import { PLANETS_QUERY_KEY } from "@/reactQuery/keys/keys"
 import getQueryClient from "@/utils/getQueryClient"
+import ReduxTest from "@/components/ReduxTest/ReduxTest"
 
 export default async function Home() {
   const queryClient = getQueryClient()
@@ -14,6 +15,7 @@ export default async function Home() {
     <main className="block">
       <ReactQueryHydrate state={dehydratedState}>
         <PlanetList />
+        <ReduxTest />
       </ReactQueryHydrate>
     </main>
   )
