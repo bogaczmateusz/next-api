@@ -3,9 +3,10 @@
 import React from "react"
 import { useDispatch, useSelector } from "react-redux"
 import { selectTest, setTest } from "@/redux/slices/common.slice"
+import { AppDispatch } from "@/redux/store"
 
 const ReduxTest = () => {
-  const dispatch = useDispatch()
+  const dispatch = useDispatch<AppDispatch>()
   const test = useSelector(selectTest)
 
   const [value, setValue] = React.useState<string>("")

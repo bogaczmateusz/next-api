@@ -1,6 +1,7 @@
+import React from "react"
 import "./globals.css"
 import type { Metadata } from "next"
-import { ReactQueryProvider } from "@/providers/ReactQueryProvider"
+import { CombinedProviders } from "@/providers/CombinedProviders"
 
 export const metadata: Metadata = {
   title: "Star Wars"
@@ -14,7 +15,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <ReactQueryProvider>{children}</ReactQueryProvider>
+        <CombinedProviders>{children}</CombinedProviders>
       </body>
     </html>
   )

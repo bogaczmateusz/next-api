@@ -1,10 +1,10 @@
 import { dehydrate } from "@tanstack/react-query"
-import PlanetList from "@/components/PlanetList/PlanetList"
-import { ReactQueryHydrate } from "@/components/ReactQueryHydrate/ReactQueryHydrate"
 import { queryPlanets } from "@/hooks/usePlanets"
 import { PLANETS_QUERY_KEY } from "@/reactQuery/keys/keys"
 import getQueryClient from "@/utils/getQueryClient"
+import { ReactQueryHydrate } from "@/components/ReactQueryHydrate/ReactQueryHydrate"
 import ReduxTest from "@/components/ReduxTest/ReduxTest"
+import PlanetList from "@/components/PlanetList/PlanetList"
 
 export default async function Home() {
   const queryClient = getQueryClient()

@@ -1,13 +1,13 @@
 import { configureStore, combineReducers } from "@reduxjs/toolkit"
 import { commonSlice } from "./slices/common.slice"
 
-const combinedReducer = combineReducers({
+const rootReducer = combineReducers({
   [commonSlice.name]: commonSlice.reducer
 })
 
 export function makeStore() {
   return configureStore({
-    reducer: combinedReducer
+    reducer: rootReducer
   })
 }
 
