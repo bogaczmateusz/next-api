@@ -1,1 +1,1 @@
-export const PLANETS_QUERY_KEY = "swapi.planets.query.key"
+export const POSTS_QUERY_KEY = "posts.query.key"

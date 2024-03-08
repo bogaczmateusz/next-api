@@ -4,7 +4,7 @@ import type { Metadata } from "next"
 import { CombinedProviders } from "@/providers/CombinedProviders"
 
 export const metadata: Metadata = {
-  title: "Star Wars"
+  title: "My shop"
 }
 
 export default function RootLayout({
